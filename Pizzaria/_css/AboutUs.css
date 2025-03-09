@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+  
+/* Reset de estilos padrão */
+body {
+    margin: 0; /* Remove margens padrão */
+    font-family: Arial, sans-serif; /* Define uma fonte padrão */
+  }
+  
+  /* Estilos do menu de navegação */
+
+  nav ul {
+    list-style-type: none; /* Remove os marcadores de lista padrão */
+    margin: 0; /* Remove margens padrão */
+    padding: 0; /* Remove preenchimento padrão */
+    display: flex; /* Exibe os itens do menu em linha */
+    justify-content: center; /* Centraliza os itens do menu horizontalmente */
+    position: relative;
+    color: #f5efe7;
+    background-image:url('../_imagens/269.jpg');
+  }
+  
+  nav ul li {
+    padding: 10px 20px; /* Espaçamento interno dos itens do menu */
+    position: relative; /* Deestiloine uma posição relativa para o item do menu */
+    margin:0 50px;
+    color: #cf740b;
+    
+  }
+  
+  nav ul li a {
+    color: rgb(236, 236, 211); /* Cor do texto do link */
+    text-decoration: none; /* Remove a decoração de texto padrão do link */
+    position: relative; /* Define uma posição relativa para o link */
+    font-size: 25px; /* Aumenta o tamanho da fonte para 18 pixels */
+    
+  }
+ 
+  
+  /* Efeito de risco em baixo ao passar o mouse sobre o link */
+  nav ul li a::after {
+    content: ''; /* Adiciona conteúdo vazio para criar o elemento */
+    position: absolute; /* Define uma posição absoluta */
+    width: 0; /* Largura inicial do risco em baixo */
+    height: 2px; /* Altura do risco em baixo */
+    bottom: -3px; /* Posiciona o risco 3 pixels abaixo do link */
+    left: 0; /* Posiciona o risco no início do link */
+    background-color: rgb(221, 120, 5); /* Cor do risco em baixo */
+    transition: width 0.3s; /* Adiciona uma transição suave à largura */
+    
+  }
+  
+  nav ul li a:hover::after {
+    width: 100%; /* Aumenta a largura do pseudo-elemento para 100% quando o mouse passa sobre o link */
+    
+   
+  }
+  nav ul li a:hover {
+    color: rgb(221, 120, 5); /* Muda a cor do texto do link quando o mouse passa sobre ele */
+    
+  }
+  
+  
+  /* Estilos específicos para o logo no meio do menu */
+  nav ul li#logo {
+    padding: 0; /* Remove o espaçamento interno do logo */
+    display: flex; /* Exibe o logo como um item flexível */
+    justify-content: center; /* Centraliza o logo horizontalmente */
+    align-items: center; /* Centraliza o logo verticalmente */
+    
+  }
+  
+  nav ul li#logo img {
+    max-width: 100px; /* Define a largura máxima do logo */
+    height: 80px;
+    
+  }
+  .menu-icon {
+    display: none; /* Oculta o ícone do menu por padrão */
+    font-size: 30px; /* Tamanho do ícone */
+    cursor: pointer; /* Cursor pointer para indicar que é clicável */
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        display: none; /* Oculta o menu por padrão */
+        flex-direction: column; /* Itens do menu em coluna */
+        width: 100%; /* Largura total em telas menores */
+        position: absolute; /* Posiciona o menu em relação ao nav */
+        top: 640px; /* Abaixo do menu */
+        left: 0; /* Alinhado à esquerda */
+        background-color: rgb(88, 84, 84); /* Cor de fundo do menu */
+        z-index: 1000; /* Coloca o menu acima de outros elementos */
+    }
+    
+    nav ul.show {
+        display: flex; /* Exibe o menu quando a classe é adicionada */
+    }
+
+    .menu-icon {
+        display: block; /* Exibe o ícone do menu em telas menores */
+    }
+}
+  
+
+
+ /* Estilos Personalizados */
+.carousel-item img {
+    max-width: auto; /* Limita a largura das imagens em 300 pixels */
+    height: 600px;
+    background-size: cover;
+ 
+  }
+  .overlay-image {
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 15%;
+    height: 15%;
+    z-index: 9999; /* Certifica-se de que a imagem está sobreposta a outros elementos */
+    pointer-events: none; /* Garante que a imagem não seja clicável */
+}
+.container-wrapper {
+  display: flex; /* Para alinhar os contêineres na mesma linha */
+  justify-content: space-between; /* Para alinhar os contêineres nas extremidades */
+ background-color: #6d3f03;
+
+}
+
+.imagem{
+
+  height: 500px;
+  width: 500px;
+}
+
+
+
+.rodape {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.endereco, .contato {
+  font-size: x-large;
+  color: #e0730d;
+}
+
+.redes-sociais .icone-social {
+  display: inline-block;
+  margin: 0 10px;
+  font-size: larger;
+  color: #fff;
+  text-decoration: none;
+}
+
+.redes-sociais .icone-social:hover {
+  color: #ffcc00; /* Cor quando hover */
+}
+
+
+
+
+
+.estilo {
+  background-color: #f8f3f3;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  background-image: url('../_imagens/fundomenu.jpeg');
+  
+}
+
+.conteudo1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.imagem-container {
+  margin-bottom: 20px;
+}
+
+.imagem-container img {
+  width: 300px; /* Ajuste o tamanho conforme necessário */
+  height: auto;
+}
+
+.para {
+  margin-bottom: 10px;
+  font-size: xx-large;
+  color: #e0730d;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+.endereco {
+  margin-bottom: 10px;
+  font-size: x-large;
+  color: #070303;
+}
+
+.redes-sociais .icone-social {
+  color: #070303;
+  text-decoration: none;
+}
+
+.redes-sociais .icone-social:hover {
+  color: #ffcc00; /* Cor quando hover */
+}
+
+.separador {
+  margin: 0 10px;
+  color: #b18905;
+}
+
+.horario{
+font-size: xx-large;
+font-family: Georgia, 'Times New Roman', Times, serif;
+color: #070303;
+}
+.dias{
+  font-size: larger;
+  color: #070303;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.pag {
+  background-color: #fde7e7;
+
+  padding: 20px;
+  text-align: center;
+  flex-shrink: 0;
+}
+.pagi{
+  font-size: xx-large;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #e0730d;
+}
+.pag2 {
+  background-color: #fde7e7;
+  padding: 20px;
+  text-align: center;
+  flex-shrink: 0;
+  display: flex;
+}
+.pagi2{
+  font-size: large;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #161514;
+}
+
+
+/* Media Queries para Responsividade */
+@media (max-width: 768px) {
+  nav ul li {
+      margin: 0 5px; 
+  }
+  nav ul li a {
+      font-size: 18px; 
+  }
+  .conteudo {
+      flex: 1 1 45%; 
+      max-width: 100%; 
+  }
+  .botao {
+      font-size: 14px; 
+  }
+}
+
+@media (max-width: 480px) {
+  nav ul {
+      flex-direction: column; /* Alinha itens verticalmente */
+  }
+  .conteudo {
+      flex: 1 1 100%; 
+  }
+  .conteudo1 {
+      font-size: large; 
+  }
+}
+
+
+#logo img {
+  height: 50px; /* Ajuste a altura conforme necessário */
+  width: auto; /* Mantém a proporção da imagem */
+  display: block; /* Remove espaço em branco abaixo da imagem */
+  margin: 0 auto; /* Centraliza a imagem se necessário */
+}
+
+@media (max-width: 768px) {
+  #logo img {
+      height: 40px; /* Tamanho menor em telas menores */
+  }
+}

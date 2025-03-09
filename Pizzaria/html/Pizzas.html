@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="../_css/pizza.css">
+<script src="https://kit.fontawesome.com/3df637a2f2.js" crossorigin="anonymous"></script>
+<script src="../js/pizza.js"></script>
+<title>Pizzas</title>
+</head>
+<body>
+
+   
+
+  <header class="content">
+    <nav>
+        <div class="menu-icon" onclick="toggleMenu()">☰</div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="sobrenos.html">Sobre Nós</a></li>
+            <li id="logo"><a href="#"><img src="../_imagens/PIZZARIAA.png" alt="Logo"></a></li>
+            <li><a href="Pizzas.html">Cardápio</a></li>
+            <li><a href="carrinho.html"><i class="fas fa-shopping-cart"></i></a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="container1" id="home">
+  <div class="conteudo1">
+    Pizzas Salgados 
+  </div>
+</div>
+
+<section class="first-section" id="home">
+  <div class="container-wrapper">
+    <div class="conteudo">
+      <img class="imagem" src="../_imagenspizza/3 queijos.jpg" alt="pizza" >
+      <div class="sabor"> 3 Queijos</div>
+      <div> <button class="botao" onclick="adicionarAoCarrinho('3 queijos Broto', 27)"> Broto R$27,00</button></div>
+      <div> <button class="botao" onclick="adicionarAoCarrinho('3 queijos Grande', 35)"> Grande R$35,00</button></div>
+      <div> <button class="botao" onclick="adicionarAoCarrinho('3 queijos Meia', 13.50)"> Meia R$13,50</button></div>
+    </div>
+    <div class="conteudo">
+      <img class="imagem" src="../_imagenspizza/4queijos.jpg" alt="pizza">
+      <a class="ingrediente" href="#" onclick="exibirMensagem('molho de tomate queijo e calabreza')"></a>
+      <div class="sabor" >4 Queijos</div>
+      <div> <button class="botao" onclick="adicionarAoCarrinho('4 Queijos Broto', 28 )"> Broto R$28,00</button></div>
+      <div> <button class="botao" onclick="adicionarAoCarrinho('4 Queijos Grande', 38)"> Grande R$38,00</button></div>
+      <div> <button class="botao" onclick="adicionarAoCarrinho('4 Queijos Meia', 14)"> Meia R$14,00</button></div>
+    </div>
+    <div class="conteudo">
+      <img class="imagem" src="../_imagenspizza/americana.jpg" alt="pizza" >
+      <div class="sabor">Americana</div> 
+      <div> <button class="botao" onclick="adicionarAoCarrinho('Americana Broto', 25)"> Broto R$25,00</button></div>
+      <div> <button class="botao" onclick="adicionarAoCarrinho('Americana Grande', 35)"> Grande R$35,00</button></div>
+      <div> <button class="botao" onclick="adicionarAoCarrinho('Americana Meia', 17.50)"> Meia R$17.50</button></div>
+      
+    </div>
+  
+</section>
+
+
+
+<section class="first-section" id="home">
+  <div class="container-wrapper">
+    <div class="conteudo">
+      <img class="imagem" src="../_imagenspizza/bauru.jpg" alt="pizza" >
+      <div class="sabor"> Bauru</div>
+      <div> <button class="botao" onclick="adicionarAoCarrinho('Bauru Broto', 28)"> Broto R$28,00</button></div>
+      <div> <button class="botao" onclick="adicionarAoCarrinho('Bauru Grande', 37)"> Grande R$37,00</button></div>
+      <div> <button class="botao" onclick="adicionarAoCarrinho('Bauru Meia', 20)"> Meia R$20,00</button></div>
+    </div>
+    <div class="conteudo">
+      <img class="imagem" src="../_imagenspizza/calabresa.jpg" alt="pizza" onclick="exibirMensagem('A pizza frango com Catupiry custa 20 reais')">
+      <div class="sabor">Calabresa</div>
+      <div> <button class="botao" onclick="adicionarAoCarrinho('Calabresa Broto', 28 ,'')"> Broto R$28,00</button></div>
+      <div> <button class="botao" onclick="adicionarAoCarrinho('Calabresa Grande', 38)"> Grande R$38,00</button></div>
+      <div> <button class="botao" onclick="adicionarAoCarrinho('Calabresa Meia', 19)"> Meia R$19,00</button></div>
+    </div>
+    <div class="conteudo">
+      <img class="imagem" src="../_imagenspizza/carnesseca.jpg" alt="pizza" >
+      <div class="sabor" >Carne Seca</div> 
+      <div> <button class="botao" onclick="adicionarAoCarrinho('Carne Seca Broto', 27)"> Broto R$27,00</button></div>
+      <div> <button class="botao" onclick="adicionarAoCarrinho('Carne Seca Grande', 37)"> Grande R$37,00</button></div>
+      <div> <button class="botao" onclick="adicionarAoCarrinho('Carne Seca Meia', 17.50)"> Meia R$17,50</button></div>
+      
+    </div>
+ 
+</section>
+
+
+
+<section class="first-section" id="home">
+  <div class="container-wrapper">
+    <div class="conteudo">
+      <img class="imagem" src="../_imagenspizza/damadanoite.jpg" alt="pizza" >
+      <div class="sabor" > Dama da Noite</div>
+      <div> <button class="botao" onclick="adicionarAoCarrinho(' Dama da Noite Broto', 40)"> Broto R$40,00</button></div>
+      <div> <button class="botao" onclick="adicionarAoCarrinho(' Dama da Noite Grande', 52)"> Grande R$52,00</button></div>
+      <div> <button class="botao" onclick="adicionarAoCarrinho(' Dama da Noite Meia', 26)"> Meia R$26,00</button></div>
+    </div>
+    <div class="conteudo">
+      <img class="imagem" src="../_imagenspizza/Egg&bacon.jpg" alt="pizza" onclick="exibirMensagem('A pizza frango com Catupiry custa 20 reais')">
+      <div class="sabor">Egg & Bacon</div>
+      <div> <button class="botao" onclick="adicionarAoCarrinho('Egg & Bacon Broto', 26 ,'')"> Broto R$26,00</button></div>
+      <div> <button class="botao" onclick="adicionarAoCarrinho('Egg & Bacon Grande', 43)"> Grande R$43,00</button></div>
+      <div> <button class="botao" onclick="adicionarAoCarrinho('Egg & Bacon Meia', 21)"> Meia R$21,00</button></div>
+    </div>
+    <div class="conteudo">
+      <img class="imagem" src="../_imagenspizza/Frango com requeijao.jpg" alt="pizza" onclick="exibirMensagem('A pizza frango com requeijão custa 20 reais')">
+      <div class="sabor">Frango com Requeijao</div> 
+      <div> <button class="botao" onclick="adicionarAoCarrinho('Frango com requeijao Broto', 30)"> Broto R$30,00</button></div>
+      <div> <button class="botao" onclick="adicionarAoCarrinho('Frango com requeijao Grande', 48)"> Grande R$48,00</button></div>
+      <div> <button class="botao" onclick="adicionarAoCarrinho('Frango com requeijao Meia', 24)"> Meia R$24,00</button></div>
+      
+    </div>
+  
+</section>
+
+
+
+<section class="first-section" id="home">
+  <div class="container-wrapper">
+    <div class="conteudo">
+      <img class="imagem" src="../_imagenspizza/frangocatupiry.jpg" alt="pizza" >
+      <div class="sabor"> Frango com Catupiry</div>
+      <div> <button class="botao" onclick="adicionarAoCarrinho(' Frango com Catupiry Broto', 30)"> Broto R$30,00</button></div>
+      <div> <button class="botao" onclick="adicionarAoCarrinho(' Frango com Catupiry Grande', 45)"> Grande R$45,00</button></div>
+      <div> <button class="botao" onclick="adicionarAoCarrinho(' Frango com Catupiry Meia', 22)"> Meia R$22,00</button></div>
+    </div>
+    <div class="conteudo">
+      <img class="imagem" src="../_imagenspizza/Frangogrelhado.jpg" alt="pizza" >
+      <div class="sabor">Frango Grelhado</div>
+      <div> <button class="botao" onclick="adicionarAoCarrinho('Frango Grelhado Broto', 28 ,'')"> Broto R$28,00</button></div>
+      <div> <button class="botao" onclick="adicionarAoCarrinho('Frango Grelhado Grande', 38)"> Grande R$38,00</button></div>
+      <div> <button class="botao" onclick="adicionarAoCarrinho('Frango Grelhado Meia', 14)"> Meia R$14,00</button></div>
+    </div>
+    <div class="conteudo">
+      <img class="imagem" src="../_imagenspizza/labianca.jpg" alt="pizza" >
+      <div class="sabor">La Bianca</div> 
+      <div> <button class="botao" onclick="adicionarAoCarrinho('La Bianca Broto', 27)"> Broto R$27,00</button></div>
+      <div> <button class="botao" onclick="adicionarAoCarrinho('La Bianca Grande', 35)"> Grande R$35,00</button></div>
+      <div> <button class="botao" onclick="adicionarAoCarrinho('La Bianca Meia', 13.50)"> Meia R$13,50</button></div>
+      
+    </div>
+ 
+</section>
+
+
+
+<section class="first-section" id="home">
+  <div class="container-wrapper">
+    <div class="conteudo">
+      <img class="imagem" src="../_imagenspizza/Margherita.jpg" alt="pizza" >
+      <a class="ingrediente" href="#" onclick="exibirMensagem('molho de tomate queijo e calabreza')"></a>
+      <div class="sabor"> Margherita</div>
+      <div> <button class="botao" onclick="adicionarAoCarrinho('Margherita Broto', 30)"> Broto R$30,00</button></div>
+      <div> <button class="botao" onclick="adicionarAoCarrinho('Margherita Grande', 42)"> Grande R$42,00</button></div>
+      <div> <button class="botao" onclick="adicionarAoCarrinho('Margherita Meia', 21.00)"> Meia R$21,00</button></div>
+    </div>
+    <div class="conteudo">
+      <img class="imagem" src="../_imagenspizza/MEAT&BACON.jpg" alt="pizza" onclick="exibirMensagem('A pizza frango com Catupiry custa 20 reais')">
+      <div class="sabor">Meat & Bacon</div>
+      <div> <button class="botao" onclick="adicionarAoCarrinho('Meat & Bacon Broto', 25 ,'')"> Broto R$25,00</button></div>
+      <div> <button class="botao" onclick="adicionarAoCarrinho('Meat & Bacon Grande', 37)"> Grande R$37,00</button></div>
+      <div> <button class="botao" onclick="adicionarAoCarrinho('Meat & Bacon Meia', 17)"> Meia R$17,00</button></div>
+    </div>
+    <div class="conteudo">
+      <img class="imagem" src="../_imagenspizza/milho com Bacon.jpg" alt="pizza" onclick="exibirMensagem('A pizza frango com requeijão custa 20 reais')">
+      <div class="sabor">Milho com Bacon</div> 
+      <div> <button class="botao" onclick="adicionarAoCarrinho('Milho com Bacon Broto', 29)"> Broto R$29,00</button></div>
+      <div> <button class="botao" onclick="adicionarAoCarrinho('Milho com Bacon Grande', 40)"> Grande R$40,00</button></div>
+      <div> <button class="botao" onclick="adicionarAoCarrinho('Milho com Bacon Meia', 20.00)"> Meia R$20,00</button></div>
+      
+    </div>
+   
+</section>
+
+
+
+<section class="first-section" id="home">
+  <div class="container-wrapper">
+    <div class="conteudo">
+      <img class="imagem" src="../_imagenspizza/Modadacasa.jpg" alt="pizza" >
+      <a class="ingrediente" href="#" onclick="exibirMensagem('molho de tomate queijo e calabreza')"></a>
+      <div class="sabor"> Moda da Casa</div>
+      <div> <button class="botao" onclick="adicionarAoCarrinho('Moda da Casa Broto', 30)"> Broto R$30,00</button></div>
+      <div> <button class="botao" onclick="adicionarAoCarrinho('Moda da Casa Grande', 49)"> Grande R$49,00</button></div>
+      <div> <button class="botao" onclick="adicionarAoCarrinho('Moda da Casa Meia', 25)"> Meia R$25,00</button></div>
+    </div>
+    <div class="conteudo">
+      <img class="imagem" src="../_imagenspizza/mussarela.jpg" alt="pizza" onclick="exibirMensagem('A pizza frango com Catupiry custa 20 reais')">
+      <a class="ingrediente" href="#" onclick="exibirMensagem('molho de tomate queijo e calabreza')"></a>
+      <div class="sabor">Mussarela</div>
+      <div> <button class="botao" onclick="adicionarAoCarrinho('Mussarela Broto', 30 ,'')"> Broto R$30,00</button></div>
+      <div> <button class="botao" onclick="adicionarAoCarrinho('Mussarela Grande', 40)"> Grande R$40,00</button></div>
+      <div> <button class="botao" onclick="adicionarAoCarrinho('Mussarela Meia', 20)"> Meia R$20,00</button></div>
+    </div>
+    <div class="conteudo">
+      <img class="imagem" src="../_imagenspizza/napolitana.jpg" alt="pizza" onclick="exibirMensagem('A pizza frango com requeijão custa 20 reais')">
+      <div class="sabor">Napolitana</div> 
+      <div> <button class="botao" onclick="adicionarAoCarrinho('Napolitana Broto', 32)"> Broto R$32,00</button></div>
+      <div> <button class="botao" onclick="adicionarAoCarrinho('Napolitana Grande', 42)"> Grande R$42,00</button></div>
+      <div> <button class="botao" onclick="adicionarAoCarrinho('Napolitana Meia', 21)"> Meia R$21,00</button></div>
+      
+    </div>
+ 
+</section>
+
+
+<section class="first-section" id="home">
+  <div class="container-wrapper">
+    <div class="conteudo">
+      <img class="imagem" src="../_imagenspizza/pepperoni.jpg" alt="pizza" >
+      <a class="ingrediente" href="#" onclick="exibirMensagem('molho de tomate queijo e calabreza')"></a>
+      <div class="sabor"> Pepperoni</div>
+      <div> <button class="botao" onclick="adicionarAoCarrinho('Pepperoni Broto', 28)"> Broto R$28,00</button></div>
+      <div> <button class="botao" onclick="adicionarAoCarrinho('Pepperoni Grande', 40)"> Grande R$40,00</button></div>
+      <div> <button class="botao" onclick="adicionarAoCarrinho('Pepperoni Meia', 20.00)"> Meia R$20,00</button></div>
+    </div>
+    <div class="conteudo">
+      <img class="imagem" src="../_imagenspizza/portuguesa.jpg" alt="pizza" onclick="exibirMensagem('A pizza frango com Catupiry custa 20 reais')">
+      <a class="ingrediente" href="#" onclick="exibirMensagem('molho de tomate queijo e calabreza')"></a>
+      <div class="sabor">Portuguesa</div>
+      <div> <button class="botao" onclick="adicionarAoCarrinho('Portuguesa Broto', 30 ,'carrinhoAntigo')"> Broto R$20,00</button></div>
+      <div> <button class="botao" onclick="adicionarAoCarrinho('Portuguesa Grande', 41)"> Grande R$41,00</button></div>
+      <div> <button class="botao" onclick="adicionarAoCarrinho('Portuguesa Meia', 20.50)"> Meia R$20,50</button></div>
+    </div>
+    <div class="conteudo">
+      <img class="imagem" src="../_imagenspizza/premium.jpg" alt="pizza" onclick="exibirMensagem('A pizza frango com requeijão custa 20 reais')">
+      <div class="sabor">Premium</div> 
+      <div> <button class="botao" onclick="adicionarAoCarrinho('Premium Broto', 27)"> Broto R$27,00</button></div>
+      <div> <button class="botao" onclick="adicionarAoCarrinho('Premium Grande', 37)"> Grande R$37,00</button></div>
+      <div> <button class="botao" onclick="adicionarAoCarrinho('Premium Meia', 17.50)"> Meia R$17,50</button></div>
+      
+    </div>
+ 
+</section>
+
+
+<section class="first-section" id="home">
+  <div class="container-wrapper">
+    <div class="conteudo">
+      <img class="imagem" src="../_imagenspizza/presuntocompeperroni.jpg" alt="pizza" >
+      <a class="ingrediente" href="#" onclick="exibirMensagem('molho de tomate queijo e calabreza')"></a>
+      <div class="sabor"> Presunto com Peperroni</div>
+      <div> <button class="botao" onclick="adicionarAoCarrinho(' Presunto com Peperroni Broto', 28)"> Broto R$28,00</button></div>
+      <div> <button class="botao" onclick="adicionarAoCarrinho(' Presunto com Peperroni Grande', 38)"> Grande R$38,00</button></div>
+      <div> <button class="botao" onclick="adicionarAoCarrinho(' Presunto com Peperroni Meia', 18)"> Meia R$18,00</button></div>
+    </div>
+    <div class="conteudo">
+      <img class="imagem" src="../_imagenspizza/presunto.jpg" alt="pizza" onclick="exibirMensagem('A pizza frango com Catupiry custa 20 reais')">
+      <a class="ingrediente" href="#" onclick="exibirMensagem('molho de tomate queijo e calabreza')"></a>
+      <div class="sabor">Presunto</div>
+      <div> <button class="botao" onclick="adicionarAoCarrinhoF('Presunto Broto ', 25 ,'carrinhoAntigo')"> Broto R$25,00</button></div>
+      <div> <button class="botao" onclick="adicionarAoCarrinho('Presunto Grande', 35)"> Grande R$35,00</button></div>
+      <div> <button class="botao" onclick="adicionarAoCarrinho('Presunto Meia', 17.50)"> Meia R$17,50</button></div>
+    </div>
+    <div class="conteudo">
+      <img class="imagem" src="../_imagenspizza/vegana.jpg" alt="pizza" onclick="exibirMensagem('A pizza frango com requeijão custa 20 reais')">
+      <div class="sabor">Vegana</div> 
+      <div> <button class="botao" onclick="adicionarAoCarrinho('Vegana Broto', 27)"> Broto R$27,00</button></div>
+      <div> <button class="botao" onclick="adicionarAoCarrinho('Vegana Grande', 35)"> Grande R$35,00</button></div>
+      <div> <button class="botao" onclick="adicionarAoCarrinho('Vegana Meia', 13.50)"> Meia R$13,50</button></div>
+      
+    </div>
+ 
+</section>
+
+<div class="container1" id="home">
+  <div class="conteudo1">
+  Pizzas Doces
+  </div>
+</div>
+
+
+
+
+<section class="first-section" id="home">
+  <div class="container-wrapper">
+    <div class="conteudo">
+      <img class="imagem" src="../_imagenspizza/mm.jpg" alt="pizza" >
+      <div class="sabor">Confete</div>
+      <div> <button class="botao" onclick="adicionarAoCarrinho('Confete Broto', 35)"> Broto R$35,00</button></div>
+      <div> <button class="botao" onclick="adicionarAoCarrinho('Confete Grande', 60)"> Grande R$60,00</button></div>
+      <div> <button class="botao" onclick="adicionarAoCarrinho('Confete Meia', 30)"> Meia R$30,00</button></div>
+    </div>
+    <div class="conteudo">
+      <img class="imagem" src="../_imagenspizza/brigadeiro.jpg" alt="pizza" onclick="exibirMensagem('A pizza frango com Catupiry custa 20 reais')">
+      <a class="ingrediente" href="#" onclick="exibirMensagem('molho de tomate queijo e calabreza')"></a>
+      <div class="sabor">Brigadeiro</div>
+      <div> <button class="botao" onclick="adicionarAoCarrinho('Brigadeiro Broto', 40 ,'carrinhoAntigo')"> Broto R$40,00</button></div>
+      <div> <button class="botao" onclick="adicionarAoCarrinho('Brigadeiro Grande', 50)"> Grande R$50,00</button></div>
+      <div> <button class="botao" onclick="adicionarAoCarrinho('Brigadeiro Meia', 25)"> Meia R$25,00</button></div>
+    </div>
+    <div class="conteudo">
+      <img class="imagem" src="../_imagenspizza/docedeleite.jpg" alt="pizza" onclick="exibirMensagem('A pizza frango com requeijão custa 20 reais')">
+      <div class="sabor">Doce de Leite</div> 
+      <div> <button class="botao" onclick="adicionarAoCarrinho('Doce de Leite Broto', 27)"> Broto R$27,00</button></div>
+      <div> <button class="botao" onclick="adicionarAoCarrinho('Doce de Leite Grande', 35)"> Grande R$35,00</button></div>
+      <div> <button class="botao" onclick="adicionarAoCarrinho('Doce de Leite Meia', 17.50)"> Meia R$17,50</button></div>
+      
+    </div>
+ 
+</section>
+
+
+<section class="first-section" id="home">
+  <div class="container-wrapper">
+    <div class="conteudo">
+      <img class="imagem" src="../_imagenspizza/kitkat.jpeg" alt="pizza" >
+      <a class="ingrediente" href="#" onclick="exibirMensagem('molho de tomate queijo e calabreza')"></a>
+      <div class="sabor"> Kit kat</div>
+      <div> <button class="botao" onclick="adicionarAoCarrinho('Kit kat Broto', 40)"> Broto R$40,00</button></div>
+      <div> <button class="botao" onclick="adicionarAoCarrinho('Kit kat Grande', 55)"> Grande R$55,00</button></div>
+      <div> <button class="botao" onclick="adicionarAoCarrinho('Kit kat Meia', 27.50)"> Meia R$27,50</button></div>
+    </div>
+    <div class="conteudo">
+      <img class="imagem" src="../_imagenspizza/banana.jpeg" alt="pizza" onclick="exibirMensagem('A pizza frango com Catupiry custa 20 reais')">
+      <a class="ingrediente" href="#" onclick="exibirMensagem('molho de tomate queijo e calabreza')"></a>
+      <div class="sabor">Banana</div>
+      <div> <button class="botao" onclick="adicionarAoCarrinho('Banana Broto', 28 ,'carrinhoAntigo')"> Broto R$28,00</button></div>
+      <div> <button class="botao" onclick="adicionarAoCarrinho('Banana Grande', 38)"> Grande R$38,00</button></div>
+      <div> <button class="botao" onclick="adicionarAoCarrinho('Banana Meia', 19)"> Meia R$19,00</button></div>
+    </div>
+    <div class="conteudo">
+      <img class="imagem" src="../_imagenspizza/morangochocolate.jpeg" alt="pizza" onclick="exibirMensagem('A pizza frango com requeijão custa 20 reais')">
+      <div class="sabor">Morango com Chocolate</div> 
+      <div> <button class="botao" onclick="adicionarAoCarrinho('Morango com Chocolate Broto', 45)"> Broto R$45,00</button></div>
+      <div> <button class="botao" onclick="adicionarAoCarrinho('Morango com Chocolate Grande', 70)"> Grande R$70,00</button></div>
+      <div> <button class="botao" onclick="adicionarAoCarrinho('Morango com Chocolate Meia', 35)"> Meia R$35,00</button></div>
+      
+    </div>
+ 
+</section>
+
+
+<div class="container1" id="home">
+  <div class="conteudo1">
+  Fogazzas
+  </div>
+</div>
+
+
+
+
+<section class="first-section" id="home">
+  <div class="container-wrapper">
+    <div class="conteudo">
+      <img class="imagem" src="../_imagenspizza/fogazafrango.jpeg" alt="pizza" >
+      <a class="ingrediente" href="#" onclick="exibirMensagem('molho de tomate queijo e calabreza')"></a>
+      <div class="sabor"> Fogazza de Frango</div>
+      <div> <button class="botao" onclick="adicionarAoCarrinho('Fogazza de Frango  Pequena', 10)"> Pequena R$10,00</button></div>
+      <div> <button class="botao" onclick="adicionarAoCarrinho('Fogazza de Frango Grande', 15)"> Grande R$15,00</button></div>
+    </div>
+    <div class="conteudo">
+      <img class="imagem" src="../_imagenspizza/fogazzacarne.jpeg" alt="pizza" onclick="exibirMensagem('A pizza frango com Catupiry custa 20 reais')">
+      <a class="ingrediente" href="#" onclick="exibirMensagem('molho de tomate queijo e calabreza')"></a>
+      <div class="sabor">Fogazza Carne</div>
+      <div> <button class="botao" onclick="adicionarAoCarrinho('Fogazza Carne Pequena', 10 ,'carrinhoAntigo')"> Pequena R$10,00</button></div>
+      <div> <button class="botao" onclick="adicionarAoCarrinho('Fogazza Carne Grande', 15)"> Grande R$15,00</button></div>
+    </div>
+    <div class="conteudo">
+      <img class="imagem" src="../_imagenspizza/fogazzzapresuntoequeijo.jpeg" alt="pizza" onclick="exibirMensagem('A pizza frango com requeijão custa 20 reais')">
+      <div class="sabor">Fogazza de Presunto</div> 
+      <div> <button class="botao" onclick="adicionarAoCarrinho('Fogazza de Presunto e Queijo Pequena', 10)"> Pequena R$10,00</button></div>
+      <div> <button class="botao" onclick="adicionarAoCarrinho('Fogazza de Presunto e Queijo Grande', 15)"> Grande R$15,00</button></div>
+      
+    </div>
+ 
+</section>
+
+
+<section class="first-section" id="home">
+  <div class="container-wrapper">
+    <div class="conteudo">
+      <img class="imagem" src="../_imagenspizza/fogazzabrigadeiro.jpg" alt="pizza" >
+      <a class="ingrediente" href="#" onclick="exibirMensagem('molho de tomate queijo e calabreza')"></a>
+      <div class="sabor"> Fogazza Brigadeiro</div>
+      <div> <button class="botao" onclick="adicionarAoCarrinho('Fogazza Brigadeiro Pequena', 15)"> Pequena R$15,00</button></div>
+      <div> <button class="botao" onclick="adicionarAoCarrinho('Fogazza Brigadeiro Grande', 20)"> Grande R$20,00</button></div>
+    </div>
+    <div class="conteudo">
+      <img class="imagem" src="../_imagenspizza/fogazzadocedeleite.jpg" alt="pizza" onclick="exibirMensagem('A pizza frango com Catupiry custa 20 reais')">
+      <a class="ingrediente" href="#" onclick="exibirMensagem('molho de tomate queijo e calabreza')"></a>
+      <div class="sabor">Fogazza Doce de Leite</div>
+      <div> <button class="botao" onclick="adicionarAoCarrinho('Fogazza Doce de Leite Pequena', 15 ,'carrinhoAntigo')"> Pequena R$28,00</button></div>
+      <div> <button class="botao" onclick="adicionarAoCarrinho('Fogazza Doce de Leite Grande', 20)"> Grande R$38,00</button></div>
+    </div>
+  
+ 
+</section>
+
+
+<div class="container1" id="home">
+  <div class="conteudo1">
+  Bebidas
+  </div>
+</div>
+
+
+
+
+<section class="first-section" id="home">
+  <div class="container-wrapper">
+    <div class="conteudo">
+      <img class="imagem" src="../_imagensbebidas/coca.jpg" alt="" >   
+      <div class="sabor" >Coca Cola</div></a>
+      <div> <button class="botao" onclick="adicionarAoCarrinho('Cocacola Lata', 6)"> Cocacola Lata R$6,00</button></div>
+      <div> <button class="botao" onclick="adicionarAoCarrinho('Cocacola Litro', 12)">Cocacola Litro R$12,00</button></div>
+    </div>
+    <div class="conteudo">
+        <img class="imagem" src="../_imagensbebidas/cocaz.jpg" alt="" >
+        <a class="ingrediente" href="#" ></a>
+        <div class="sabor">Coca Cola Zero</div>
+        <div> <button class="botao" onclick="adicionarAoCarrinho('Cola Zero Lata', 6)"> Cola Zero  Lata R$6,00</button></div>
+        <div> <button class="botao" onclick="adicionarAoCarrinho('Cola Zero Litro', 12)">Cola Zero  Litro R$12,00</button></div>
+      </div>
+      <div class="conteudo">
+        <img class="imagem" src="../_imagensbebidas/fantaguara.jpg" alt="" >
+        <a class="ingrediente" href="#" ></a>
+        <div class="sabor">Fanta Guarana</div>
+        <div> <button class="botao" onclick="adicionarAoCarrinho('Fanta Guarana Lata', 6)"> Fanta Guarana Lata R$6,00</button></div>
+        <div> <button class="botao" onclick="adicionarAoCarrinho('Fanta Guarana Litro', 12)">Fanta Guarana Litro R$12,00</button></div>
+      </div>
+    
+</section>
+
+
+
+<section class="first-section" id="home">
+  <div class="container-wrapper">
+    <div class="conteudo">
+      <img class="imagem" src="../_imagensbebidas/fantauva.jpg" alt="" >
+      <a class="ingrediente" href="#" ></a>
+      <div class="sabor">Fanta Uva</div>
+      <div> <button class="botao" onclick="adicionarAoCarrinho('Fanta Uva Lata', 6)"> Fanta Uva Lata R$6,00</button></div>
+      <div> <button class="botao" onclick="adicionarAoCarrinho('Fanta Uva Litro', 12)">Fanta Uva Litro R$12,00</button></div>
+    </div>
+    <div class="conteudo">
+        <img class="imagem" src="../_imagensbebidas/sprite.jpg" alt="" >
+        <a class="ingrediente" href="#" ></a>
+        <div class="sabor">Sprite</div>
+        <div> <button class="botao" onclick="adicionarAoCarrinho('Sprite Lata', 6)"> Sprite Lata R$6,00</button></div>
+        <div> <button class="botao" onclick="adicionarAoCarrinho('Sprite Litro', 12)">Sprite Litro R$12,00</button></div>
+      </div>
+      <div class="conteudo">
+        <img class="imagem" src="../_imagensbebidas/agua.jpg" alt="" >
+        <a class="ingrediente" href="#" ></a>
+        <div class="sabor">Água</div>
+        <div> <button class="botao" onclick="adicionarAoCarrinho('Água ', 6)"> Água  R$6,00</button></div>
+        <div> <button class="botao" onclick="adicionarAoCarrinho('Água Litro', 12)">Água Litro R$12,00</button></div>
+      </div>
+      
+</section>
+
+<section class="first-section" id="home">
+  <div class="container-wrapper">
+    <div class="conteudo">
+      <img class="imagem" src="../_imagensbebidas/Schweppes.jpg" alt="" >
+      <a class="ingrediente" href="#" ></a>
+      <div class="sabor">Schweppes</div>
+      <div> <button class="botao" onclick="adicionarAoCarrinho('Schweppes Lata', 6)"> Fanta Uva Lata R$6,00</button></div>
+      <div> <button class="botao" onclick="adicionarAoCarrinho('Schweppes Litro', 12)">Fanta Uva Litro R$12,00</button></div>
+    </div>
+    <div class="conteudo">
+        <img class="imagem" src="../_imagensbebidas/fantala.jpg" alt="" >
+        <a class="ingrediente" href="#" ></a>
+        <div class="sabor">Fanta Laranja</div>
+        <div> <button class="botao" onclick="adicionarAoCarrinho('Fanta Laranja Lata', 6)"> Sprite Lata R$6,00</button></div>
+        <div> <button class="botao" onclick="adicionarAoCarrinho('Fanta Laranja Litro', 12)">Sprite Litro R$12,00</button></div>
+      </div>
+     
+      
+</section>
+
+
+
+<footer class="rodape">
+  <div class="endereco">
+      <p>Estr. do Alvarenga, xxxx- Balneário Mar Paulista</p>
+  </div>
+  <div class="contato">
+      <p>Telefone: (11) 9xxxx-xxxx</p>
+      <p>Bella Pizza a Melhor Pizzaria da Região</p>
+  </div>
+  <div class="redes-sociais">
+      <a href="https://api.whatsapp.com/send?phone=5511" class="icone-social"><i class="fab fa-whatsapp"></i></a>
+      <a href="https://www.instagram.com/abellapizzaa5?igsh=NDRndjJkbTdzZ3ho" class="icone-social"><i class="fab fa-instagram"></i></a>
+  </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

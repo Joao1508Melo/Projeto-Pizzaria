@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../_css/carrinho.css">
+    <script src="https://kit.fontawesome.com/3df637a2f2.js" crossorigin="anonymous"></script>
+    <script src="../js/carrinho.js"></script>
+    <title>Carrinho</title>
+</head>
+<body>
+  
+    <header class="content">
+        <nav>
+            <div class="menu-icon" onclick="toggleMenu()">☰</div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sobrenos.html">Sobre Nós</a></li>
+                <li id="logo"><a href="#"><img src="../_imagens/PIZZARIAA.png" alt="Logo"></a></li>
+                <li><a href="Pizzas.html">Cardápio</a></li>
+                <li><a href="carrinho.html"><i class="fas fa-shopping-cart"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+<h1><strong>Seu Carrinho de Compras</strong></h1>
+
+
+
+    <!-- Formulário de informações do cliente -->
+    <form id="info-cliente">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" placeholder="Digite seu nome">
+        
+        <label for="endereco">Endereço de Entrega:</label>
+        <input type="text" id="endereco" placeholder="Digite seu endereço">
+        
+        <label for="numero">Número:</label>
+        <input type="text" id="numero" placeholder="Digite o número da casa">
+        
+        <label for="telefone">Telefone:</label>
+        <input type="text" id="telefone" placeholder="Digite seu telefone">
+        
+        <label for="pagamento">Forma de Pagamento:</label>
+        <select id="pagamento">
+            <option value="dinheiro">Dinheiro</option>
+            <option value="cartao">Cartão de Crédito</option>
+            <option value="pix">Pix</option>
+        </select>
+        
+        <!-- Wrapper para centralizar o botão -->
+        <div class="button-wrapper">
+            <!-- Botão para enviar o carrinho pelo WhatsApp -->
+            <button class="botao" onclick="enviarPeloWhatsApp()">Enviar Carrinho pelo WhatsApp</button>
+        </div>
+    </form>
+
+    <!-- Container para o conteúdo do carrinho -->
+<div id="container-carrinho">
+    <!-- Elemento para exibir os itens do carrinho -->
+    <div id="itens-carrinho"></div>
+</div>
+<div id="total-carrinho"></div>
+</div>
+
+<footer class="rodape">
+    <div class="endereco">
+        <p>Estr. do Alvarenga, xxxx - Balneário Mar Paulista</p>
+    </div>
+    <div class="contato">
+        <p>Telefone: (11) 9xxxx-xxxx</p>
+        <p>Bella Pizza a Melhor Pizzaria da Região</p>
+    </div>
+    <div class="redes-sociais">
+        <a href="https://api.whatsapp.com/send?phone=5511" class="icone-social"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://www.instagram.com/abellapizzaa5?igsh=NDRndjJkbTdzZ3ho" class="icone-social"><i class="fab fa-instagram"></i></a>
+    </div>
+  </footer>
+  
+
+
+</body>
+</html>
