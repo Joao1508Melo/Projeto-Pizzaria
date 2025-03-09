@@ -14,14 +14,4 @@ O Pizzaria BellaPizza é uma aplicação web desenvolvida para oferecer uma expe
 - **JavaScript**: Para funcionalidades interativas, como o carrinho de compras.
 - **WhatsApp API**: Integração para envio de pedidos diretamente pelo aplicativo.
 
-## Como Contribuir
-Sinta-se à vontade para contribuir com melhorias, sugestões ou correções. Agradecemos sua ajuda para tornar a Pizzaria Sabor & Tradição ainda melhor!
 
-## Demonstração
-Uma demonstração do projeto pode ser encontrada em [link para a demonstração, se disponível]." > README.md
-
-# Adicione o arquivo ao repositório
-git add README.md
-
-# Faça o commit das alterações
-git commit -m "Adiciona README.md com descrição do projeto Pizzaria Sabor & Tradição"
