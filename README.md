@@ -1,12 +1,3 @@
-# Crie um novo diretório para o projeto
-mkdir pizzaria-BellaPizza
-cd pizzaria-BellaPizza
-
-# Inicialize um novo repositório Git
-git init
-
-# Crie um arquivo README.md
-echo "# PizzariaBellaPizza
 
 ## Descrição do Projeto
 O Pizzaria BellaPizza é uma aplicação web desenvolvida para oferecer uma experiência completa de pedidos online de pizzas. O projeto foi criado com o objetivo de facilitar a escolha, personalização e compra de pizzas, permitindo que os clientes façam seus pedidos de forma rápida e prática.
